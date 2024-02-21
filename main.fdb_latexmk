@@ -1,5 +1,13 @@
 # Fdb version 4
-["pdflatex"] 1708509441 "c:/Users/User/Documents/GitHub/StevenWeinbergQFTComp/main.tex" "main.pdf" "main" 1708509443 0
+["bibtex main"] 1708510953 "main.aux" "main.bbl" "main" 1708510958 0
+  "./refs.bib" 1708510501 295 48c817d1a5ebd8259da1247b32e2f534 ""
+  "C:/Program Files/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  "main.aux" 1708510957 1061 de24ee304b0a7c7b9551210ad9942dab "pdflatex"
+  (generated)
+  "main.bbl"
+  "main.blg"
+  (rewritten before read)
+["pdflatex"] 1708510956 "c:/Users/User/Documents/GitHub/StevenWeinbergQFTComp/main.tex" "main.pdf" "main" 1708510958 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/times/ptmb7t.tfm" 1136743454 2172 fd0c924230362ff848a33632ed45dc23 ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/times/ptmb8r.tfm" 1136743454 4524 6bce29db5bc272ba5f332261583fee9c ""
@@ -132,11 +140,12 @@
   "C:/Program Files/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1693810728 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1693810789 23169141 993e65cef8809479343a59b58963b8f9 ""
-  "c:/Users/User/Documents/GitHub/StevenWeinbergQFTComp/main.tex" 1708509441 1794 ad23d05ec6a282458c1e544e2648e56c ""
-  "main.aux" 1708509443 955 60f9dc8cf9890b82833e38f1140aa2bc "pdflatex"
-  "main.out" 1708509443 467 09969ab5207d84ecaf69fe9060f5b0c7 "pdflatex"
-  "main.tex" 1708509441 1794 ad23d05ec6a282458c1e544e2648e56c ""
-  "main.toc" 1708509443 241 6c2f980d591d190f7b62661c165d4881 "pdflatex"
+  "c:/Users/User/Documents/GitHub/StevenWeinbergQFTComp/main.tex" 1708510956 2242 366fa0ea3f5f0b290bd5d7a199d2c79f ""
+  "main.aux" 1708510957 1061 de24ee304b0a7c7b9551210ad9942dab "pdflatex"
+  "main.bbl" 1708510953 264 96fb772a83d248d556927e3340d40bff "bibtex main"
+  "main.out" 1708510957 467 09969ab5207d84ecaf69fe9060f5b0c7 "pdflatex"
+  "main.tex" 1708510956 2242 366fa0ea3f5f0b290bd5d7a199d2c79f ""
+  "main.toc" 1708510957 241 6c2f980d591d190f7b62661c165d4881 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
