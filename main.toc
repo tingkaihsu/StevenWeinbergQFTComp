@@ -1,3 +1,1 @@
-\contentsline {section}{\numberline {1}Historical Introduction}{1}{section.1}%
-\contentsline {section}{\numberline {2}Relativistic Quantum Mechanics}{1}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Symmetries}{1}{subsection.2.1}%
+\contentsline {section}{\numberline {1}T P Symmetries}{1}{section.1}%

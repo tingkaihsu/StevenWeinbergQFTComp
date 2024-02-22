@@ -1,3 +1,18 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{PhysRevLett.13.138}
+J.~H. Christenson, J.~W. Cronin, V.~L. Fitch, and R.~Turlay.
+\newblock Evidence for the $2\ensuremath{\pi}$ decay of the $k_{2}^{0}$ meson.
+\newblock {\em Phys. Rev. Lett.}, 13:138--140, Jul 1964.
+
+\bibitem{PhysRev.104.254}
+T.~D. Lee and C.~N. Yang.
+\newblock Question of parity conservation in weak interactions.
+\newblock {\em Phys. Rev.}, 104:254--258, Oct 1956.
+
+\bibitem{Weinberg_1995}
+Steven Weinberg.
+\newblock {\em RELATIVISTIC QUANTUM MECHANICS}, page 49–106.
+\newblock Cambridge University Press, 1995.
 
 \end{thebibliography}

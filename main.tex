@@ -43,17 +43,56 @@ tabsize=3
 }
 \numberwithin{equation}{subsection}
 
-\title{Notes of Quantum Theory of Fields by S.Weinberg}
+\title{Quantum Field Theory Problems}
 \author{Ting-Kai Hsu}
 \date{\today}
 
 \begin{document}
 \maketitle
 \tableofcontents
-\section{Historical Introduction}
-\section{Relativistic Quantum Mechanics}
-\subsection{Symmetries}
+\section{T P Symmetries}
+In S.Weinberg famous textbook about quantum field theory\cite{Weinberg_1995} section 2.6, he discusses parity$\mathcal{P}$ and time inversion$\mathcal{T}$. 
+\footnote{I use different notation with Weinberg.}
+\begin{equation}
+    \begin{split}
+        \mathcal{P}^{\mu}_{\,\,\,\,\nu} = \begin{pmatrix}
+            1&0&0&0\\
+            0&-1&0&0\\
+            0&0&-1&0\\
+            0&0&0&-1\\
+        \end{pmatrix}\\
+        \mathcal{T}_{\,\,\,\,\nu}^{\mu} = \begin{pmatrix}
+            -1&0&0&0\\
+            0&1&0&0\\
+            0&0&1&0\\
+            0&0&0&1\\
+        \end{pmatrix}
+    \end{split}
+\end{equation}
+The operators of $\mathcal{P}$ and $\mathcal{T}$ are believed to be
+\begin{equation}
+    \begin{split}
+        \text{P} \equiv U(\mathcal{P}, 0)\\
+        \text{T} \equiv U(\mathcal{T}, 0)
+    \end{split}
+\end{equation}
+He seems to define a new notation that corresponds to not only Lorentz transformation and translation but also parity and time inversion.
+The operators of Poincar\'e algebra would transform according to the following law,
+\begin{equation}
+    \begin{split}
+        \text{P}U(\Lambda, a)\text{P}^{-1} = U(\mathcal{P}\Lambda\mathcal{P}^{-1}, \mathcal{P}a)\\
+        \text{T}U(\Lambda, a)\text{T}^{-1} = U(\mathcal{T}\Lambda\mathcal{T}^{-1}, \mathcal{T}a)
+    \end{split}
+\end{equation}
+I'm confused about what he means,
+\begin{quotation}
+    These transformation rules incorporate most of what is meant when we say that P or T are 'conserved'.
+\end{quotation}
 
+Later, he points out that the above equations of P and T are merely approximation.
+These are provided by T. D. Lee, C. N. Yang and others works\cite{PhysRev.104.254}\cite{PhysRevLett.13.138}. 
+Before reading the references, I think that the problem arises from that equation (1.0.3) that physicists originally define is wrong, or merely an approximation.
+Still, I would like to know why and why it is regarded as approximation.
 \bibliographystyle{plain}
 \bibliography{refs}
 \end{document}
