@@ -10,9 +10,24 @@ T.~D. Lee and C.~N. Yang.
 \newblock Question of parity conservation in weak interactions.
 \newblock {\em Phys. Rev.}, 104:254--258, Oct 1956.
 
+\bibitem{PhysRev.79.469}
+B.~A. Lippmann and Julian Schwinger.
+\newblock Variational principles for scattering processes. i.
+\newblock {\em Phys. Rev.}, 79:469--480, Aug 1950.
+
 \bibitem{Weinberg_1995}
 Steven Weinberg.
 \newblock {\em RELATIVISTIC QUANTUM MECHANICS}, page 49–106.
 \newblock Cambridge University Press, 1995.
+
+\bibitem{Weinberg_1995_3}
+Steven Weinberg.
+\newblock {\em SCATTERING THEORY}, page 107–168.
+\newblock Cambridge University Press, 1995.
+
+\bibitem{Weinberg_2015}
+Steven Weinberg.
+\newblock {\em POTENTIAL SCATTERING}, page 247–281.
+\newblock Cambridge University Press, 2015.
 
 \end{thebibliography}

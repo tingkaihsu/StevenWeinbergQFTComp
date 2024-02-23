@@ -95,10 +95,21 @@ Before reading the references, I think that the problem arises from that equatio
 Still, I would like to know why and why it is regarded as approximation.
 \section{Lippmann-Schwinger equation}
 \begin{equation}
-    \Psi_{\mathbf{k}}^{\text{in}} = \Phi_{\mathbf{k}}+\left(E(|\mathbf{k}|-H_{0}+i\epsilon)\right)^{-1}\Psi_{\mathbf{k}}^{\text{in}}
+    \Psi_{\alpha}^{+} = \Phi_{\alpha}+\left(E(|\mathbf{k}|-H_{0}+i\epsilon)\right)^{-1}V\Psi_{\alpha}^{+}
 \end{equation}
-It seems Weinberg's reason of adding the positive infinitesimal parameter $\epsilon$ is weird, and it is unclear and unintuitive for giving meaning to operator.
-\section{Meaning and Function of Potential Operator}
+It seems Weinberg's reason\cite{Weinberg_2015} of adding the positive infinitesimal parameter $\epsilon$ is weird, and it is unclear and unintuitive for giving meaning to operator.
+Although the sentence of giving meaning to operator is unclear, it is also mentioned in Weinberg's another textbook for quantum field theory\cite{Weinberg_1995_3} that this is because of operator $(E_{\alpha}-H_0)$ isn't invertible, and this is because $E_{\alpha}$ is the eigenvalue of $H_0$; however, restricting the infinitesimal parameter to be positive is still confusing.
+Possible solution is to re-derive the Lippmann-Schwinger equation\cite{PhysRev.79.469} in path integral formalism.
+\section{Meaning and Function of Potential Operator V}
+When we expand the second term of equation (2.0.1) with free-interaction state $\Phi_{\beta}$, we get
+\begin{equation}
+    \Psi_{\alpha}^{+} = \Phi_{\alpha} + \int{d\beta\,\frac{(\Phi_{\beta}, V\Psi_{\alpha}^{+})}{(E(|\mathbf{k}|)-E_{\beta}+i\epsilon)}\Phi_{\beta}}
+\end{equation}
+and define the T matrix, which later will be seen in S matrix,
+\begin{equation}
+    T_{\beta\alpha}^{+} \equiv (\Phi_{\beta}, V\Psi_{\alpha}^{+})
+\end{equation}
+Now this is weird to me because it is unclear about the inner product between two different vectors from two different Hilbert spaces\footnote{That is, one is one of the eigenvectors of free-interaction $H_0$ and the other is one of the eigenvectors of total Hamiltonian $H$.}.
 
 \bibliographystyle{plain}
 \bibliography{refs}
