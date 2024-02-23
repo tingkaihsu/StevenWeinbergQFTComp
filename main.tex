@@ -110,6 +110,31 @@ and define the T matrix, which later will be seen in S matrix,
     T_{\beta\alpha}^{+} \equiv (\Phi_{\beta}, V\Psi_{\alpha}^{+})
 \end{equation}
 Now this is weird to me because it is unclear about the inner product between two different vectors from two different Hilbert spaces\footnote{That is, one is one of the eigenvectors of free-interaction $H_0$ and the other is one of the eigenvectors of total Hamiltonian $H$.}.
+\section{Notes for Lippmann-Schwinger Equation Paper}
+For a system with interaction, its Hamiltonian can be expressed as
+\begin{equation}
+    H = H_0 + V
+\end{equation}
+and the time-dependent Schr$\ddot{o}$dinger's equation for a state in Schr$\ddot{o}$dinger's picture
+\begin{equation}
+    i\frac{\partial }{\partial t}\Psi'(t) = (H_0+V)\Psi'(t)
+\end{equation}
+and we could define a new state associated with the above state (which is known as interaction picture)
+\begin{equation}
+    \Psi'(t) = \exp(-iH_0t)\Psi(t)
+\end{equation}
+thus equation (4.0.2) would become
+\[H_0\exp(-iH_0t)\Psi(t)+i\exp(-iH_0t)\frac{\partial }{\partial t}\Psi(t) =\]
+\[(H_0+V)\exp(-iH_0t)\Psi(t)\]
+by further simplification, we have
+\begin{equation}
+    i\frac{\partial }{\partial t}\Psi(t) = V(t)\Psi(t)
+\end{equation}
+where the interaction operator is defined
+\begin{equation}
+    V(t) = \exp(iH_0t)V\exp(-iH_0t)
+\end{equation}
+
 
 \bibliographystyle{plain}
 \bibliography{refs}
