@@ -110,31 +110,72 @@ and define the T matrix, which later will be seen in S matrix,
     T_{\beta\alpha}^{+} \equiv (\Phi_{\beta}, V\Psi_{\alpha}^{+})
 \end{equation}
 Now this is weird to me because it is unclear about the inner product between two different vectors from two different Hilbert spaces\footnote{That is, one is one of the eigenvectors of free-interaction $H_0$ and the other is one of the eigenvectors of total Hamiltonian $H$.}.
+
 \section{Notes for Lippmann-Schwinger Equation Paper}
-For a system with interaction, its Hamiltonian can be expressed as
+\subsection{In Out States}
+In this section, I would derive Lippmann-Schwinger equation in similar way as S.Weinberg \cite{Weinberg_2015}, but would first derive the formula of S-matrix and T-matrix.
+We define 'in' and 'out' states $\Psi_{\alpha}^{+}$ and $\Psi_{\beta}^{-}$ as eigenstates of the total Hamiltonian
 \begin{equation}
-    H = H_0 + V
+    H\Psi_{\alpha}^{\pm} = E_{\alpha}\Psi_{\alpha}^{\pm}
 \end{equation}
-and the time-dependent Schr$\ddot{o}$dinger's equation for a state in Schr$\ddot{o}$dinger's picture
+that both states look like an eigenstate $\Phi_{\alpha}$ of the free-particle Hamiltonian
 \begin{equation}
-    i\frac{\partial }{\partial t}\Psi'(t) = (H_0+V)\Psi'(t)
+    H_0\Phi_{\alpha} = E_{\alpha}\Phi_{\alpha}
 \end{equation}
-and we could define a new state associated with the above state (which is known as interaction picture)
+Note that we describe these states in Schr$\ddot{\text{o}}$diger picture, and this means we must use wave packet to describe the behavior of particle because if not we only got a phase with same state when acting time-evolution operator on state $\exp(-iHt)\Psi_{\alpha}^{\pm} = \exp(-iE_{\alpha}t)\Psi_{\alpha}^{\pm}$
 \begin{equation}
-    \Psi'(t) = \exp(-iH_0t)\Psi(t)
+    \Psi_{g}^{\pm}(t) = \int{d\alpha\,g(\alpha)\exp(-iE_{\alpha}t)\Psi_{\alpha}^{+}}
 \end{equation}
-thus equation (4.0.2) would become
-\[H_0\exp(-iH_0t)\Psi(t)+i\exp(-iH_0t)\frac{\partial }{\partial t}\Psi(t) =\]
-\[(H_0+V)\exp(-iH_0t)\Psi(t)\]
-by further simplification, we have
+where amplitude $g(\alpha)$ is a smooth-varying function when time evolves.
+We further require the 'in' and 'out' states to satisfy the condition
 \begin{equation}
-    i\frac{\partial }{\partial t}\Psi(t) = V(t)\Psi(t)
+    \Psi_{g}^{\pm}(t)\rightarrow \int{d\alpha\,g(\alpha)\exp(-iE_{\alpha}t)\Phi_{\alpha}}
 \end{equation}
-where the interaction operator is defined
+when $t\rightarrow-\infty$ for 'in' state and $t\rightarrow\infty$ for 'out' state.
+Written equation (4.1.3) and (4.1.4) in 
 \begin{equation}
-    V(t) = \exp(iH_0t)V\exp(-iH_0t)
+    \begin{split}
+        \Psi_{g}^{\pm}(t) = \exp(-iHt)\int{d\alpha\,g(\alpha)\Psi_{\alpha}^{\pm}}\\
+        \Phi_{g}(t) = \exp(-iH_0t)\int{d\alpha\,g(\alpha)\Phi_{\alpha}}
+    \end{split}
+\end{equation}
+With condition (4.1.4) we could find out the relation
+\begin{equation}
+    \Psi_{\alpha}^{\pm} = \Omega(\mp\infty)\Phi_{\alpha}
+\end{equation}
+where $\Omega(t) = \exp(+iHt)\exp(-iH_0t)$
+\subsection{S-matrix}
+Equation (4.1.1) implies the 'in' and 'out' states should inhabit same Hilbert space, so we can express the 'out' state as linear combination of 'in' states, and the coefficients are defined as S-matrix.
+S-matrix will completely contain the information of scattering
+\begin{equation}
+    S_{\beta\alpha} = \left(\Psi_{\beta}^{-}, \Psi_{\alpha}^{+}\right)
+\end{equation}
+we could further express S-matrix as by equation (4.1.6)
+\begin{equation}
+    S_{\beta\alpha} = \left(\Phi_{\beta}, U(+\infty, -\infty)\Phi_{\alpha}\right)
+\end{equation}
+where $U(t, t_0) = \Omega^{\dagger}(t)\Omega(t_0) = \exp(iH_0t)\exp(-iH(t-t_0))\exp(-iH_0t_0)$.
+and define the collision operator such that 
+\begin{equation}
+    \left(\Phi_{\beta}, S\Phi_{\alpha}\right) \equiv S_{\beta\alpha}
+\end{equation}
+Then collision operator would be
+\begin{equation}
+    S=U(+\infty, -\infty)
 \end{equation}
 
+Now focus on the time-evolution operator $U(t, -\infty)$, it satisfies the initial condition and differential equation
+\begin{equation}
+    \begin{split}
+        U(-\infty, -\infty) = 1\\
+        i\frac{\partial}{\partial t}U(t, -\infty) =V(t)U(t, -\infty)
+    \end{split}
+\end{equation}
+with $v(t) = \exp(iH_0t)V\exp(-iH_0t)$
+The solution would be
+\begin{equation}
+    U(t, -\infty) = 1 - i\int_{-\infty}^{t}{d\tau\, V(\tau)\,U(\tau, -\infty)}
+\end{equation}
 
 \bibliographystyle{plain}
 \bibliography{refs}
