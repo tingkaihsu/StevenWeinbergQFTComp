@@ -176,7 +176,41 @@ The solution would be
 \begin{equation}
     U(t, -\infty) = 1 - i\int_{-\infty}^{t}{d\tau\, V(\tau)\,U(\tau, -\infty)}
 \end{equation}
+Changing the upper bound of the integral,
+\[ = 1 - i\int_{-\infty}^{\infty}{d\tau\,\theta(t-\tau)V(\tau)U(\tau,-\infty)}\]
+The collision matrix would be
+\begin{equation}
+    S = 1 - i\int_{-\infty}^{\infty}{dt\,V(t)U(t,-\infty)}
+\end{equation}
+We could consider the part of the operator that generates the interaction
+\begin{equation}
+    \begin{split}
+        T = S - 1\\
+        T = -i\int_{-\infty}^{\infty}{dt\,V(t)U(t,-\infty)}
+    \end{split}
+\end{equation}
+and the coefficient would be
+\begin{equation}
+    T_{\beta\alpha} = -i\int_{-\infty}^{\infty}{dt\,\left(\Phi_{\beta},V(t)U(t,-\infty)\Phi_{\alpha}\right)}
+\end{equation}
+Expand the interaction $V(t) = \exp(iH_0t)V\exp(-iH_0t)$,
+\[T_{\beta\alpha} = -i\int_{-\infty}^{\infty}{dt\,\left(e^{-iH_0t}\Phi_{\beta},Ve^{-iH_0t}U(t, -\infty)\Phi_{\alpha}\right)}\]
+\begin{equation} = -i\left(\Phi_{\beta}, V\Psi_{\alpha}(E_{\beta})\right)\end{equation}
 
+Practically, we cannot anticipate to observe Hilbert space that corresponds to free Hamiltonian, we cannot really construct eigenstates $\Phi_{\alpha}$ of free Hamiltonian without interaction.
+Schwinger suggests considering equivalent description by simulating the cessation of interaction, and the interaction is regarded to arise from the separation with the free Hamiltonian of the system.
+The cessation of the interaction could be done by adding an adiabatic decrease in the interaction strength as $t\rightarrow\pm\infty$.
+This could be represented by the factor $\exp(-\epsilon\left|t\right|)$, where $\epsilon$ is a positive infinitesimal parameter.
+Thus we consider $\Phi_{\beta}$ to be the exact eigenstate of free Hamiltonian under this condition
+Then in equation (4.2.10)
+\begin{equation}
+    \Psi_{\alpha}(E_{\beta}) = \int_{-\infty}^{\infty}{dt\,e^{i(E_{\beta}-H_0)t}e^{-\epsilon\left|t\right|}U(t,-\infty)\Phi_{\alpha}}
+\end{equation}
+Taking equation (4.2.6)
+\[=\int_{-\infty}^{\infty}{dt\,e^{i(E_{\beta}-E_{\alpha})t}e^{-\epsilon|t|}\Phi_{\alpha}}\]
+\[ -i \int_{-\infty}^{\infty}{dt\,e^{i(E_{\beta}-H_0)t}e^{-\epsilon|t|}}\]
+\[\times\int_{-\infty}^{\infty}{dt'\,\theta(t-t')e^{-\epsilon|t|}e^{iH_0t'}Ve^{-iH_0t'}U(t',-\infty)\Phi_{\alpha}}\]
+adding $e^{-iE_{\beta}t}e^{iE_{\beta}t}$ between $V$ and $e^{-iH_0t'}$
 \bibliographystyle{plain}
 \bibliography{refs}
 \end{document}
