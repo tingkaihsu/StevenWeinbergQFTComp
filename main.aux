@@ -2,10 +2,13 @@
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
 \HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
 \global\let\oldnewlabel\newlabel
 \gdef\newlabel#1#2{\newlabelxx{#1}#2}
 \gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
 \AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
 \let\newlabel\oldnewlabel
 \fi}
 \fi}
@@ -21,6 +24,7 @@
 \citation{Weinberg_2015}
 \citation{Weinberg_1995_3}
 \citation{PhysRev.79.469}
+\citation{676400}
 \@writefile{toc}{\contentsline {section}{\numberline {2}Lippmann-Schwinger equation}{2}{section.2}\protected@file@percent }
 \citation{Weinberg_2015}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Meaning and Function of Potential Operator V}{3}{section.3}\protected@file@percent }
@@ -30,9 +34,10 @@
 \bibstyle{plain}
 \bibdata{refs}
 \bibcite{PhysRevLett.13.138}{1}
-\bibcite{PhysRev.104.254}{2}
-\bibcite{PhysRev.79.469}{3}
-\bibcite{Weinberg_1995}{4}
-\bibcite{Weinberg_1995_3}{5}
-\bibcite{Weinberg_2015}{6}
-\gdef \@abspage@last{6}
+\bibcite{676400}{2}
+\bibcite{PhysRev.104.254}{3}
+\bibcite{PhysRev.79.469}{4}
+\bibcite{Weinberg_1995}{5}
+\bibcite{Weinberg_1995_3}{6}
+\bibcite{Weinberg_2015}{7}
+\gdef \@abspage@last{8}

@@ -101,6 +101,7 @@ It seems Weinberg's reason\cite{Weinberg_2015} of adding the positive infinitesi
 Although the sentence of giving meaning to operator is unclear, it is also mentioned in Weinberg's another textbook for quantum field theory\cite{Weinberg_1995_3} that this is because of operator $(E_{\alpha}-H_0)$ isn't invertible, and this is because $E_{\alpha}$ is the eigenvalue of $H_0$; however, restricting the infinitesimal parameter to be positive is still confusing.
 Possible solution is to re-derive the Lippmann-Schwinger equation\cite{PhysRev.79.469} in path integral formalism.
 \section{Meaning and Function of Potential Operator V}
+This problem has been asked before\cite{676400}, and there are few books that discussed about it.
 When we expand the second term of equation (2.0.1) with free-interaction state $\Phi_{\beta}$, we get
 \begin{equation}
     \Psi_{\alpha}^{+} = \Phi_{\alpha} + \int{d\beta\,\frac{(\Phi_{\beta}, V\Psi_{\alpha}^{+})}{(E(|\mathbf{k}|)-E_{\beta}+i\epsilon)}\Phi_{\beta}}
@@ -209,8 +210,41 @@ Then in equation (4.2.10)
 Taking equation (4.2.6)
 \[=\int_{-\infty}^{\infty}{dt\,e^{i(E_{\beta}-E_{\alpha})t}e^{-\epsilon|t|}\Phi_{\alpha}}\]
 \[ -i \int_{-\infty}^{\infty}{dt\,e^{i(E_{\beta}-H_0)t}e^{-\epsilon|t|}}\]
-\[\times\int_{-\infty}^{\infty}{dt'\,\theta(t-t')e^{-\epsilon|t|}e^{iH_0t'}Ve^{-iH_0t'}U(t',-\infty)\Phi_{\alpha}}\]
-adding $e^{-iE_{\beta}t}e^{iE_{\beta}t}$ between $V$ and $e^{-iH_0t'}$
+\[\times\int_{-\infty}^{\infty}{dt'\,\theta(t-t')e^{iH_0t'}Ve^{-iH_0t'}U(t',-\infty)\Phi_{\alpha}}\]
+adding $e^{-iE_{\beta}t'}e^{iE_{\beta}t'}$ between $V$ and $e^{-iH_0t'}$, the second term would be
+\[-i\int_{-\infty}^{\infty}{dt\,e^{i(E_{\beta}-H_0)t}e^{-\epsilon|t|}}\]
+\[\times\int_{-\infty}^{t}{dt'\,e^{\epsilon |t'|}e^{-\epsilon|t'|}e^{iH_0t'}Ve^{-iE_{\beta}t'}e^{iE_{\beta}t'}e^{-iH_0t'}U(t', -\infty)\Phi_{\alpha}}\]
+and then change the integral range
+\begin{equation}
+    \int_{-\infty}^{\infty}{dt}\int_{-\infty}^{t}{dt'}\rightarrow\int_{-\infty}^{\infty}{dt'}\int_{t'}^{\infty}{dt}
+\end{equation}
+Plug in the definition (4.2.11) and change the integral variable $t\rightarrow t-t'$
+\[\Psi_{\alpha}(E_{\beta}) = \int_{-\infty}^{\infty}{dt\,e^{i(E_{\beta}-E_{\alpha})t}e^{-\epsilon|t|}\Phi_{\alpha}}\]
+\begin{equation}
+    -i\int^{\infty}_{0}{d\tau\,e^{i(E_{\beta}-H_0)\tau}e^{-\epsilon\tau}V\Psi_{\alpha}(E_{\beta})}
+\end{equation}
+
+The second term is easy to evaluate
+\begin{equation}
+    -i\int_{0}^{\infty}{d\tau\,e^{i(E_{\beta}+i\epsilon-H_0)\tau}} = \frac{1}{E_{\beta}+i\epsilon-H_0}
+\end{equation}
+and the first term would be a little tricky, that is, it could be regarded as Fourier transform of Dirac delta function, so equation (4.2.13) becomes
+\begin{equation}
+    \Psi_{\alpha}(E_{\beta}) = 2\pi\delta(E_{\beta}-E_{\alpha})\Phi_{\alpha}+\frac{1}{E_{\beta}+i\epsilon-H_0}V\Psi_{\alpha}(E_{\beta})
+\end{equation}
+
+We could further simplify equation (4.2.15) by rewriting equation (4.2.11)
+\[\Psi_{\alpha}(E_{\beta}) = \int_{-\infty}^{\infty}{dt\,e^{i(E_{\beta}-H_0)t}e^{-\epsilon|t|}\Omega^{\dagger}(t)\Omega(-\infty)\Phi_{\alpha}}\]
+\[= \int_{-\infty}^{\infty}{dt\,e^{i(E_{\beta}-H_0)t}e^{-\epsilon|t|}e^{iH_0t}e^{-iHt}\Psi_{\alpha}}\]
+\[ = \int_{-\infty}^{\infty}{dt\,e^{iE_{\beta}}e^{-iE_{\alpha}t}\Psi_{\alpha}}\]
+\[ = 2\pi\delta(E_{\beta}-E_{\alpha})\Psi_{\alpha}\]
+Therefore, equation (4.2.15) becomes
+\begin{equation}
+    \Psi_{\alpha} = \Phi_{\alpha} + \frac{1}{E_{\beta}+i\epsilon-H_0}V\Psi_{\alpha}
+\end{equation}
+which is Lippmann-Schwinger equation.
+
+As we discussed above, $\epsilon$ is a positive infinitesimal parameter, and this solved my previous confusion about the physical meaning of $\epsilon$\footnote{Weinberg only states that $\epsilon$ is added because the operator $(E_{\beta}-H_0)$ is non-invertible.}.
 \bibliographystyle{plain}
 \bibliography{refs}
 \end{document}
