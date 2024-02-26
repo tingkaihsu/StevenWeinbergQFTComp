@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1708777956 "main.aux" "main.bbl" "main" 1708777959 0
-  "./refs.bib" 1708735237 2281 b797b618ac4d06512d7cdacf275afda7 ""
+["bibtex main"] 1708859859 "main.aux" "main.bbl" "main" 1708859862 0
+  "./refs.bib" 1708859844 2736 aeffad6b642f715942d3e6bcecd3d0e4 ""
   "C:/Program Files/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1708777958 1731 e3052f916209b834093d32124cc47cea "pdflatex"
+  "main.aux" 1708859861 1769 9d0500ec51314459c24e16e70a7517a8 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1708777956 "c:/Users/User/Documents/GitHub/StevenWeinbergQFTComp/main.tex" "main.pdf" "main" 1708777959 0
+["pdflatex"] 1708859859 "c:/Users/User/Documents/GitHub/StevenWeinbergQFTComp/main.tex" "main.pdf" "main" 1708859862 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/times/ptmb7t.tfm" 1136743454 2172 fd0c924230362ff848a33632ed45dc23 ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/times/ptmb8r.tfm" 1136743454 4524 6bce29db5bc272ba5f332261583fee9c ""
@@ -154,12 +154,12 @@
   "C:/Users/User/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1693810728 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/User/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm0800.pk" 1701220469 9292 94590166cbc6b843b5405967a9d89ad7 ""
   "C:/Users/User/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1693810789 23169141 993e65cef8809479343a59b58963b8f9 ""
-  "c:/Users/User/Documents/GitHub/StevenWeinbergQFTComp/main.tex" 1708777955 10377 05cf0ccf993573679de0445b5150fa76 ""
-  "main.aux" 1708777958 1731 e3052f916209b834093d32124cc47cea "pdflatex"
-  "main.bbl" 1708777956 1083 a49425eafef7660670c5e143c871775c "bibtex main"
-  "main.out" 1708777958 1076 94f52de4c0190e5b556a978b35c65cf4 "pdflatex"
-  "main.tex" 1708777955 10377 05cf0ccf993573679de0445b5150fa76 ""
-  "main.toc" 1708777958 505 c42b37a8bf6a141d68976560b60c2f1a "pdflatex"
+  "c:/Users/User/Documents/GitHub/StevenWeinbergQFTComp/main.tex" 1708859851 10476 d2e875a422d3c0f6eec1a1f2ccb6262e ""
+  "main.aux" 1708859861 1769 9d0500ec51314459c24e16e70a7517a8 "pdflatex"
+  "main.bbl" 1708859859 1393 f8d6565c82764a7291ac3bc9f6c50178 "bibtex main"
+  "main.out" 1708859861 1076 94f52de4c0190e5b556a978b35c65cf4 "pdflatex"
+  "main.tex" 1708859851 10476 d2e875a422d3c0f6eec1a1f2ccb6262e ""
+  "main.toc" 1708859861 505 c42b37a8bf6a141d68976560b60c2f1a "pdflatex"
   (generated)
   "main.aux"
   "main.log"
