@@ -1,6 +1,0 @@
-\contentsline {section}{\numberline {1}T P Symmetries}{1}{section.1}%
-\contentsline {section}{\numberline {2}Lippmann-Schwinger equation}{2}{section.2}%
-\contentsline {section}{\numberline {3}Meaning and Function of Potential Operator V}{3}{section.3}%
-\contentsline {section}{\numberline {4}Notes for Lippmann-Schwinger Equation Paper}{3}{section.4}%
-\contentsline {subsection}{\numberline {4.1}In Out States}{3}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}S-matrix}{4}{subsection.4.2}%
